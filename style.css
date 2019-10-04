@@ -1,0 +1,135 @@
+/* The style selector '*' selects all the elements that are present in our page
+    and apply the given style to them now if we want to make the margin and 
+    padding of all the element equal to zero than we must apply this style inside
+    the '*' style selector and if we only want to make the margin and padding of 
+    body element zero than we must apply these style into the body elements..*/
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+h1{
+    width: 75%;
+    margin: 20px auto 10px auto;
+    font-size: 1.8rem;
+    color: #BB4952;
+    padding: 30px 0;
+    
+   /*  width: 300px;
+    /* margin: 0px auto 0px auto; */ 
+    
+    
+    /*text-decoration: underline;*/
+}
+
+h1 .name{
+    padding: 0px 5px 0px 5px;
+ }
+
+main{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #454545;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main div{
+    width: 30%;
+    height: 160px;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 4px 6px 3px grey;
+    transition: all .4s ease-in-out;
+}
+
+main div:hover{
+    transform: scale(1.04);
+}
+
+.a{
+    background-image: url('./images/Ae_Dil.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.b{
+    background-image: url('./images/HFTW.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.c{
+    background-image: url('./images/Lily.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.d{
+    background-image: url('./images/Maccabees.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.e{
+    background-image: url('./images/Mockingbird.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.f{
+    background-image: url('./images/Paradise.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.g{
+    background-image: url('./images/SMTS.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.h{
+    background-image: url('./images/Tonight.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.i{
+    background-image: url('./images/vengaboys.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+/*  In order to use the CSS property:
+
+            margin: 0px auto 0px auto
+
+    as this property get applied to container who is carrying the text,
+    therefore in order to make that in center we need to reduce the width 
+    of the box because if we don't do so it just make the box align such that
+    both of its left and right margin should becomes equal and the text will
+    not align to the center.
+
+    If the width of box is large and we want to make the text in the center
+    inside the <div> container, we could use:
+
+            text-align: center;
+
+    instead of the margin property.
+*/
