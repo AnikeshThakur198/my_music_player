@@ -1,7 +1,13 @@
-var sounds = document.querySelectorAll('.song');
+var sounds = document.querySelectorAll('.sound');
+var demo = document.querySelectorAll('.song');
 
-for(var i = 0; i < sounds.length; i++){
-    sounds[i].addEventListener('click', function(){
-        sounds[i].style.transform = 'scale(1.0)';
+
+sounds.forEach((pad, index)=>{
+    pad.addEventListener('click', function(pad){
+        for(var i=0; i<sounds.length; i++){
+            demo[i].pause();
+        }
+        demo[index].currentTime = 0;
+        demo[index].play();
     });
-}
+});
